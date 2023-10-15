@@ -1,19 +1,18 @@
 <template>
-    <div>
-        <h1>我是父组件</h1>
-        {{money}}
-        {{car}}
-        <Son></Son>
-    </div>
+  <!-- 中英文切换 -->
+  <ConfigProvider :locale="getAntLocale">
+    <div></div>
+  </ConfigProvider>
 </template>
 
-<script setup>
-import Son from './Home.vue'
-import {ref,provide} from 'vue'
-const money = ref(10)
-const car = ref('BYD')
-provide('money',money)
-const changeMoney = (num) => {
-    money.value = num +1
-}
+<script lang="ts" setup>
+import { ConfigProvider } from 'ant-design-vue'
+import { useLocale } from './locales/useLocale'
+const { getAntLocale } = useLocale()
 </script>
+<style lang="less" scoped>
+.demo {
+  margin: 0px;
+  text-align: center;
+}
+</style>
