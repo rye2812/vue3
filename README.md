@@ -37,3 +37,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 安装 Prettier - Code formatter 插件
 【Shift】+【Alt】+F 实现保存时自动格式化代码,prettier 和 volar 会冲突
 brack pair 设置方法以及对象之间有高亮连接线提示
+
+# npx vite
+
+启动项目

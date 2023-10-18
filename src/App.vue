@@ -9,10 +9,5 @@
 import { ConfigProvider } from 'ant-design-vue'
 import { useLocale } from './locales/useLocale'
 const { getAntLocale } = useLocale()
+console.log('getAntLocale', getAntLocale)
 </script>
-<style lang="less" scoped>
-.demo {
-  margin: 0px;
-  text-align: center;
-}
-</style>
